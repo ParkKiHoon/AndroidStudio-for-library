@@ -1,0 +1,14 @@
+com.unity3d.player
+id bt_etc
+id bt_exit
+id bt_frame
+id bt_gearbox
+id bt_rotLeft
+id bt_rotRight
+id bt_stop
+id bt_wheel
+id fl_forUnity
+layout main
+style BaseUnityTheme
+style UnityThemeSelector
+style UnityThemeSelector_Translucent

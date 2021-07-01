@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:rowCount="3"
+    android:columnCount="10"
+    android:background="#FFFFFF">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_forUnity" />
+
+    <FrameLayout
+        android:id="@+id/fl_forUnity"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_row="0"
+        android:layout_column="4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff00ff15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="저장"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycler1" />
+
+    <Button
+        android:id="@+id/bt_frame"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_btn"
+        android:text="프레임"
+        app:layout_constraintBottom_toTopOf="@+id/recycler1"
+        app:layout_constraintEnd_toStartOf="@+id/bt_wheelset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_forUnity" />
+
+    <Button
+        android:id="@+id/bt_wheelset"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_btn"
+        android:text="휠셋"
+        app:layout_constraintBottom_toTopOf="@+id/recycler1"
+        app:layout_constraintEnd_toStartOf="@+id/bt_handlebar"
+        app:layout_constraintStart_toEndOf="@+id/bt_frame"
+        app:layout_constraintTop_toBottomOf="@+id/fl_forUnity" />
+
+    <Button
+        android:id="@+id/bt_handlebar"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_btn"
+        android:text="핸들바"
+        app:layout_constraintBottom_toTopOf="@+id/recycler1"
+        app:layout_constraintEnd_toStartOf="@+id/bt_saddle"
+        app:layout_constraintStart_toEndOf="@+id/bt_wheelset"
+        app:layout_constraintTop_toBottomOf="@+id/fl_forUnity" />
+
+    <Button
+        android:id="@+id/bt_saddle"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_btn"
+        android:text="안장"
+        app:layout_constraintBottom_toTopOf="@+id/recycler1"
+        app:layout_constraintEnd_toStartOf="@+id/bt_groupset"
+        app:layout_constraintStart_toEndOf="@+id/bt_handlebar"
+        app:layout_constraintTop_toBottomOf="@+id/fl_forUnity" />
+
+    <Button
+        android:id="@+id/bt_groupset"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_btn"
+        android:text="구동계"
+        app:layout_constraintBottom_toTopOf="@+id/recycler1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_saddle"
+        app:layout_constraintTop_toBottomOf="@+id/fl_forUnity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
