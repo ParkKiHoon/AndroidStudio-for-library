@@ -25,7 +25,7 @@
         android:layout_column="4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="#ff00ff15"
+        android:background="#FBFBFA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -46,7 +46,7 @@
     <Button
         android:id="@+id/bt_frame"
         android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_btn"
         android:text="프레임"
@@ -58,7 +58,7 @@
     <Button
         android:id="@+id/bt_wheelset"
         android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_btn"
         android:text="휠셋"
@@ -70,7 +70,7 @@
     <Button
         android:id="@+id/bt_handlebar"
         android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_btn"
         android:text="핸들바"
@@ -82,7 +82,7 @@
     <Button
         android:id="@+id/bt_saddle"
         android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_btn"
         android:text="안장"
@@ -94,7 +94,7 @@
     <Button
         android:id="@+id/bt_groupset"
         android:layout_width="70dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_btn"
         android:text="구동계"

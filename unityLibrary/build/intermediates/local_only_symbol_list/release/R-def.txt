@@ -1,15 +1,18 @@
 R_DEF: Internal format may change without notice
 local
-id bt_etc
-id bt_exit
+drawable btn_background
+drawable custom_btn
 id bt_frame
-id bt_gearbox
-id bt_rotLeft
-id bt_rotRight
-id bt_stop
-id bt_wheel
+id bt_groupset
+id bt_handlebar
+id bt_saddle
+id bt_save
+id bt_wheelset
 id fl_forUnity
+id recycler1
+id text1
 layout main
+layout recyclerview_item
 style BaseUnityTheme
 style UnityThemeSelector
 style UnityThemeSelector.Translucent

@@ -103,7 +103,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         this.bt_save.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.putExtra("name", "AAA");
+                intent.putExtra("name", "저장완료");
                 UnityPlayerActivity.this.setResult(8080, intent);
                 UnityPlayerActivity.this.finish();
                 UnityPlayerActivity.this.onBackPressed();
@@ -112,7 +112,8 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         this.bt_frame.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 adapter.clear();
-                adapter.addItem(new BikeData("프레임 1","1101"));
+                adapter.addItem(new BikeData("프레임 1","1102"));
+                adapter.addItem(new BikeData("프레임 2","1101"));
                 adapter.notifyDataSetChanged();
             }
         });
