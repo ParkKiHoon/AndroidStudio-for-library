@@ -12,130 +12,175 @@
 11        android:targetSdkVersion="29" />
 11-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml
 12
-13    <supports-screens
-13-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:3-163
-14        android:anyDensity="true"
-14-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:135-160
-15        android:largeScreens="true"
-15-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:78-105
-16        android:normalScreens="true"
-16-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:49-77
-17        android:smallScreens="true"
-17-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:21-48
-18        android:xlargeScreens="true" />
-18-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:106-134
-19
-20    <uses-feature android:glEsVersion="0x00020000" />
-20-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-54
-20-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-51
-21    <uses-feature
-21-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-16:36
-22        android:name="android.hardware.touchscreen"
-22-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-52
-23        android:required="false" />
-23-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
-24    <uses-feature
-24-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-19:36
-25        android:name="android.hardware.touchscreen.multitouch"
-25-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-63
-26        android:required="false" />
-26-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-33
-27    <uses-feature
-27-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:36
-28        android:name="android.hardware.touchscreen.multitouch.distinct"
-28-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-72
-29        android:required="false" />
-29-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-33
-30
-31    <application
-31-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:5:3-116
-32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-32-->[androidx.core:core:1.3.2] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\d4ec36d85e3888c4775f811ac33ad974\core-1.3.2\AndroidManifest.xml:24:18-86
-33        android:debuggable="true"
-34        android:extractNativeLibs="true"
-34-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:5:16-48
-35        android:icon="@mipmap/app_icon"
-35-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:5:82-113
-36        android:label="@string/app_name"
-36-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:5:49-81
-37        android:testOnly="true" >
-38        <activity
-38-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-45:20
-39            android:name="com.unity3d.player.UnityPlayerActivity"
-39-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-66
-40            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-40-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-194
-41            android:hardwareAccelerated="false"
-41-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-48
-42            android:launchMode="singleTask"
-42-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-44
-43            android:process=":unityplayer"
-43-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-43
-44            android:screenOrientation="fullSensor"
-44-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-51
-45            android:theme="@style/UnityThemeSelector" >
-45-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-54
-46            <intent-filter>
-46-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-37:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:17-69
-47-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-77
-49-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:27-74
-50            </intent-filter>
-51
-52            <meta-data
-52-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-41:40
-53                android:name="unityplayer.UnityActivity"
-53-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-57
-54                android:value="true" />
-54-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-37
-55            <meta-data
-55-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-44:40
-56                android:name="android.notch_support"
-56-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-53
-57                android:value="true" />
-57-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:17-37
-58        </activity>
-59
-60        <meta-data
-60-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-41:40
-61            android:name="unityplayer.UnityActivity"
-61-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-57
-62            android:value="true" />
-62-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-37
-63        <meta-data
-63-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:9-52:37
-64            android:name="unityplayer.ForwardNativeEventsToDalvik"
-64-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-67
-65            android:value="false" />
-65-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-34
-66        <meta-data
-66-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-55:33
-67            android:name="unity.splash-mode"
-67-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:13-45
-68            android:value="0" />
-68-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-30
-69        <meta-data
-69-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:9-58:36
-70            android:name="unity.splash-enable"
-70-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:13-47
-71            android:value="True" />
-71-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-33
-72        <meta-data
-72-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:9-61:50
-73            android:name="notch.config"
-73-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-40
-74            android:value="portrait|landscape" />
-74-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-47
-75        <meta-data
-75-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:9-64:68
-76            android:name="unity.build-id"
-76-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:13-42
-77            android:value="729a9ee3-18f0-47f2-b308-1324a9dcf72c" />
-77-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:13-65
-78    </application>
-79
-80</manifest>
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:3-65
+13-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:4:20-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:5:3-77
+14-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:5:20-75
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:6:3-78
+15-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:6:20-76
+16
+17    <supports-screens
+17-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:3-163
+18        android:anyDensity="true"
+18-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:135-160
+19        android:largeScreens="true"
+19-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:78-105
+20        android:normalScreens="true"
+20-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:49-77
+21        android:smallScreens="true"
+21-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:21-48
+22        android:xlargeScreens="true" />
+22-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:106-134
+23
+24    <uses-feature android:glEsVersion="0x00020000" />
+24-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-54
+24-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-51
+25    <uses-feature
+25-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-16:36
+26        android:name="android.hardware.touchscreen"
+26-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-52
+27        android:required="false" />
+27-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
+28    <uses-feature
+28-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-19:36
+29        android:name="android.hardware.touchscreen.multitouch"
+29-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-63
+30        android:required="false" />
+30-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-33
+31    <uses-feature
+31-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-22:36
+32        android:name="android.hardware.touchscreen.multitouch.distinct"
+32-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-72
+33        android:required="false" />
+33-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-33
+34
+35    <application
+35-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:8:3-116
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.3.2] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\dac573792270262fec9055dbdf85d5a3\core-1.3.2\AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="true"
+38-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:8:16-48
+39        android:icon="@mipmap/app_icon"
+39-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:8:82-113
+40        android:label="@string/app_name"
+40-->C:\AndroidTest\launcher\src\main\AndroidManifest.xml:8:49-81
+41        android:testOnly="true" >
+42        <activity
+42-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-45:20
+43            android:name="com.unity3d.player.SecondUnityPlayerActivity"
+43-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-72
+44            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+44-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-194
+45            android:hardwareAccelerated="false"
+45-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-48
+46            android:launchMode="singleTask"
+46-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-44
+47            android:process=":unityplayer"
+47-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-43
+48            android:screenOrientation="fullSensor"
+48-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-51
+49            android:theme="@style/UnityThemeSelector" >
+49-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-54
+50            <intent-filter>
+50-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-37:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:17-69
+51-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-77
+53-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:27-74
+54            </intent-filter>
+55
+56            <meta-data
+56-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-41:40
+57                android:name="unityplayer.UnityActivity"
+57-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-57
+58                android:value="true" />
+58-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-37
+59            <meta-data
+59-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-44:40
+60                android:name="android.notch_support"
+60-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-53
+61                android:value="true" />
+61-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:17-37
+62        </activity>
+63        <activity
+63-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:9-48:59
+64            android:name="com.unity3d.player.PopupActivity"
+64-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-60
+65            android:theme="@android:style/Theme.Dialog" />
+65-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-56
+66        <activity
+66-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-63:20
+67            android:name="com.unity3d.player.UnityPlayerActivity"
+67-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-66
+68            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+68-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-194
+69            android:hardwareAccelerated="false"
+69-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-48
+70            android:launchMode="singleTask"
+70-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:13-44
+71            android:process=":unityplayer"
+71-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:13-43
+72            android:screenOrientation="fullSensor"
+72-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-51
+73            android:theme="@style/UnityThemeSelector" >
+73-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-54
+74            <meta-data
+74-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-41:40
+75                android:name="unityplayer.UnityActivity"
+75-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-57
+76                android:value="true" />
+76-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-37
+77            <meta-data
+77-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-44:40
+78                android:name="android.notch_support"
+78-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-53
+79                android:value="true" />
+79-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:17-37
+80        </activity>
+81
+82        <meta-data
+82-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-41:40
+83            android:name="unityplayer.UnityActivity"
+83-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-57
+84            android:value="true" />
+84-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-37
+85        <meta-data
+85-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:9-70:37
+86            android:name="unityplayer.ForwardNativeEventsToDalvik"
+86-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-67
+87            android:value="false" />
+87-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:13-34
+88        <meta-data
+88-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:9-73:33
+89            android:name="unity.splash-mode"
+89-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-45
+90            android:value="0" />
+90-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:13-30
+91        <meta-data
+91-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:9-76:36
+92            android:name="unity.splash-enable"
+92-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:13-47
+93            android:value="True" />
+93-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:13-33
+94        <meta-data
+94-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-79:50
+95            android:name="notch.config"
+95-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-40
+96            android:value="portrait|landscape" />
+96-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:13-47
+97        <meta-data
+97-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:9-82:68
+98            android:name="unity.build-id"
+98-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:13-42
+99            android:value="729a9ee3-18f0-47f2-b308-1324a9dcf72c" />
+99-->[:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:13-65
+100    </application>
+101
+102</manifest>

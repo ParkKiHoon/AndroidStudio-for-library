@@ -1,9 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/93c3c9e44a3a5269f59adbcc5de81a0f/cursoradapter-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/93c3c9e44a3a5269f59adbcc5de81a0f/cursoradapter-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/93c3c9e44a3a5269f59adbcc5de81a0f/cursoradapter-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/4d8b425d09944cfc5a020047d3978640/cursoradapter-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/c3eb41a2f4c4b55c2f31e1ce4d7abb82/cursoradapter-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/4d8b425d09944cfc5a020047d3978640/cursoradapter-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/4d8b425d09944cfc5a020047d3978640/cursoradapter-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/4d8b425d09944cfc5a020047d3978640/jetified-androidx.cursoradapter.cursoradapter-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/4d8b425d09944cfc5a020047d3978640/jetified-androidx.cursoradapter.cursoradapter-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/4d8b425d09944cfc5a020047d3978640/jetified-androidx.cursoradapter.cursoradapter-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

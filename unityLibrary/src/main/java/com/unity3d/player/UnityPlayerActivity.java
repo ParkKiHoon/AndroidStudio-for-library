@@ -5,36 +5,67 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.PixelFormat;
+
+
+import android.graphics.Rect;
+import android.graphics.drawable.BitmapDrawable;
+import android.hardware.Camera;
+
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.PixelCopy;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.lang.reflect.Field;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
 public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecycleEvents
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
-
-    // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
-    // The command line arguments are passed as a string, separated by spaces
-    // UnityPlayerActivity calls this from 'onCreate'
-    // Supported: -force-gles20, -force-gles30, -force-gles31, -force-gles31aep, -force-gles32, -force-gles, -force-vulkan
-    // See https://docs.unity3d.com/Manual/CommandLineArguments.html
-    // @param cmdLine the current command line arguments, may be null
-    // @return the modified command line string or null
-    //Declare a FrameLayout object
     FrameLayout fl_forUnity;
     public static Context mContext;
-
+    public String[] cur_name=new String[5];
+    public String[] cur_part=new String[5];
     //Declare the buttons
     Button bt_save;
     Button bt_frame;
@@ -42,11 +73,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     Button bt_handlebar;
     Button bt_saddle;
     Button bt_groupset;
-    protected String updateUnityCommandLineArguments(String cmdLine)
-    {
-        return cmdLine;
-    }
-
+    ImageView imageView;
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
@@ -66,7 +93,17 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         //setContentView(mUnityPlayer);
         //Set the content to main
         setContentView(R.layout.main);
-
+        Intent intent=getIntent();
+        ArrayList<String> frame_name = intent.getStringArrayListExtra("frame_name");
+        ArrayList<String> frame_value = intent.getStringArrayListExtra("frame_value");
+        ArrayList<String> wheelset_name = intent.getStringArrayListExtra("wheelset_name");
+        ArrayList<String> wheelset_value = intent.getStringArrayListExtra("wheelset_value");
+        ArrayList<String> handlebar_name = intent.getStringArrayListExtra("handlebar_name");
+        ArrayList<String> handlebar_value = intent.getStringArrayListExtra("handlebar_value");
+        ArrayList<String> saddle_name = intent.getStringArrayListExtra("saddle_name");
+        ArrayList<String> saddle_value = intent.getStringArrayListExtra("saddle_value");
+        ArrayList<String> groupset_name = intent.getStringArrayListExtra("groupset_name");
+        ArrayList<String> groupset_value = intent.getStringArrayListExtra("groupset_value");
 
         //Inflate the frame layout from XML
         this.fl_forUnity = (FrameLayout)findViewById(R.id.fl_forUnity);
@@ -82,12 +119,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         this.bt_saddle = (Button)this.findViewById(R.id.bt_saddle);
         this.bt_groupset = (Button)this.findViewById(R.id.bt_groupset);
 
-
-
         ArrayList<BikeData> list = new ArrayList<>();
-        /*for (int i=0; i<100; i++) {
-            list.add(String.format("TEXT %d", i)) ;
-        }*/
 
         mContext=this;
         // 리사이클러뷰에 LinearLayoutManager 객체 지정.
@@ -102,57 +134,101 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
 
         this.bt_save.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.putExtra("name", "저장완료");
-                UnityPlayerActivity.this.setResult(8080, intent);
-                UnityPlayerActivity.this.finish();
-                UnityPlayerActivity.this.onBackPressed();
+                Intent intent2 = new Intent(getApplicationContext(),PopupActivity.class);
+                startActivityForResult(intent2,9090);
             }
         });
         this.bt_frame.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 adapter.clear();
-                adapter.addItem(new BikeData("프레임 1","1102"));
-                adapter.addItem(new BikeData("프레임 2","1101"));
+                for(int i=0;i<frame_name.size();i++) {
+                    adapter.addItem(new BikeData(frame_name.get((i)),frame_value.get(i)));
+                }
                 adapter.notifyDataSetChanged();
+                adapter.cur_state=0;
             }
         });
         this.bt_wheelset.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 adapter.clear();
-                adapter.addItem(new BikeData("휠셋 1","2101"));
-
+                for(int i=0;i<wheelset_name.size();i++) {
+                    adapter.addItem(new BikeData(wheelset_name.get((i)),wheelset_value.get(i)));
+                }
                 adapter.notifyDataSetChanged();
+                adapter.cur_state=1;
             }
         });
         this.bt_handlebar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 adapter.clear();
-                adapter.addItem(new BikeData("핸들바 1","3101"));
+                for(int i=0;i<handlebar_name.size();i++) {
+                    adapter.addItem(new BikeData(handlebar_name.get((i)),handlebar_value.get(i)));
+                }
                 adapter.notifyDataSetChanged();
+                adapter.cur_state=2;
             }
         });
         this.bt_saddle.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 adapter.clear();
-                adapter.addItem(new BikeData("안장 1","4101"));
+                for(int i=0;i<saddle_name.size();i++) {
+                    adapter.addItem(new BikeData(saddle_name.get((i)),saddle_value.get(i)));
+                }
                 adapter.notifyDataSetChanged();
+                adapter.cur_state=3;
             }
         });
         this.bt_groupset.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 adapter.clear();
-                adapter.addItem(new BikeData("구동계 1","5101"));
+                for(int i=0;i<groupset_name.size();i++) {
+                    adapter.addItem(new BikeData(groupset_name.get((i)),groupset_value.get(i)));
+                }
                 adapter.notifyDataSetChanged();
+                adapter.cur_state=4;
             }
         });
 
         mUnityPlayer.requestFocus();
 
+        Button btn_capture=findViewById(R.id.bt_capture);
+        btn_capture.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Bitmap bitmap = Bitmap.createBitmap(
+                        1000,
+                        1000
+                        , Bitmap.Config.ARGB_8888
+                );
+                Canvas canvas = new Canvas(bitmap);
+                mUnityPlayer.getView().draw(canvas);
+                imageView=findViewById(R.id.imageView);
+                imageView.setImageDrawable(new BitmapDrawable(getResources(), bitmap));
+
+            }
+        });
+        mUnityPlayer.requestFocus();
+
     }
+
+
 
     void SendToUnity(String string){
         UnityPlayer.UnitySendMessage("GameManager", "Show", string);
+    }
+
+
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == 9090 && resultCode == 9090) {
+            String name = data.getStringExtra("result");
+            UnityPlayer.UnitySendMessage("Main Camera", "Capture", "박기훈");
+            Intent intent = new Intent();
+            intent.putExtra("get_custom",name);
+            intent.putExtra("name",cur_name);
+            intent.putExtra("part",cur_part);
+            UnityPlayerActivity.this.setResult(8080, intent);
+            UnityPlayerActivity.this.finish();
+            UnityPlayerActivity.this.onBackPressed();
+        }
     }
     // When Unity player unloaded move task to background
     @Override public void onUnityPlayerUnloaded() {

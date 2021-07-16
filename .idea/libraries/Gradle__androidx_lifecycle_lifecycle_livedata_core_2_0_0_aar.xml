@@ -1,9 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/489852b413e373adbdb0bd3ea3e5ab0d/lifecycle-livedata-core-2.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/489852b413e373adbdb0bd3ea3e5ab0d/lifecycle-livedata-core-2.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/489852b413e373adbdb0bd3ea3e5ab0d/lifecycle-livedata-core-2.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/f1dc7d926157ffed027ec7a32007c283/lifecycle-livedata-core-2.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/786fc18d91b672f24dce4191a0b0b1e3/lifecycle-livedata-core-2.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/f1dc7d926157ffed027ec7a32007c283/lifecycle-livedata-core-2.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/f1dc7d926157ffed027ec7a32007c283/lifecycle-livedata-core-2.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/f1dc7d926157ffed027ec7a32007c283/jetified-androidx.lifecycle.lifecycle-livedata-core-2.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/f1dc7d926157ffed027ec7a32007c283/jetified-androidx.lifecycle.lifecycle-livedata-core-2.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/f1dc7d926157ffed027ec7a32007c283/jetified-androidx.lifecycle.lifecycle-livedata-core-2.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

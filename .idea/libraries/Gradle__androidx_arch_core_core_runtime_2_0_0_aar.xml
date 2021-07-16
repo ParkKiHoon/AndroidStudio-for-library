@@ -1,9 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.arch.core:core-runtime:2.0.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/33bc2105f36ba303854a62982782464f/core-runtime-2.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/33bc2105f36ba303854a62982782464f/core-runtime-2.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/33bc2105f36ba303854a62982782464f/core-runtime-2.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/1f2637be4cbd7e9b12efc272240e2d97/core-runtime-2.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/737fe042c356a143a641a55f6ad84721/core-runtime-2.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/1f2637be4cbd7e9b12efc272240e2d97/core-runtime-2.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/1f2637be4cbd7e9b12efc272240e2d97/core-runtime-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/1f2637be4cbd7e9b12efc272240e2d97/jetified-androidx.arch.core.core-runtime-2.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/1f2637be4cbd7e9b12efc272240e2d97/jetified-androidx.arch.core.core-runtime-2.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/1f2637be4cbd7e9b12efc272240e2d97/jetified-androidx.arch.core.core-runtime-2.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

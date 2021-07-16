@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.ViewHolder>  {
 
+    int cur_state;
     private ArrayList<BikeData> mData = null ;
 
     // 아이템 뷰를 저장하는 뷰홀더 클래스.
@@ -52,9 +53,16 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Item is clicked", Toast.LENGTH_SHORT).show();
                 ((UnityPlayerActivity)UnityPlayerActivity.mContext).SendToUnity(mData.get(position).getpart());
-
+                if(mData.get(position).getname().equals(((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name))
+                {
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name[cur_state]="";
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_part[cur_state]="";
+                }
+                else{
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name[cur_state]=mData.get(position).getname();
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_part[cur_state]=mData.get(position).getpart();
+                }
             }
         });
     }

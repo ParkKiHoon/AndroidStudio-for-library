@@ -1,9 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.customview:customview:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/19ab5715418bf0e0fb2259af124ce86f/customview-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/19ab5715418bf0e0fb2259af124ce86f/customview-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/19ab5715418bf0e0fb2259af124ce86f/customview-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/7d0caab9558c95e57a13ad69d06b1919/customview-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/5f69a2dc18748ae958ec68fdd2a13be7/customview-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/7d0caab9558c95e57a13ad69d06b1919/customview-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/7d0caab9558c95e57a13ad69d06b1919/customview-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/7d0caab9558c95e57a13ad69d06b1919/jetified-androidx.customview.customview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/7d0caab9558c95e57a13ad69d06b1919/jetified-androidx.customview.customview-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android_Avd_Gradle/.gradle/caches/transforms-2/files-2.1/7d0caab9558c95e57a13ad69d06b1919/jetified-androidx.customview.customview-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
