@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
 	package
 		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:70-98
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:99-145
 	android:versionCode
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-39:12
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-40:12
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:11-69
@@ -115,28 +115,32 @@ ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:33:5-101
 		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:33:46-98
 	android:name
 		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:33:16-45
+uses-permission#android.permission.INTERNET
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:35:3-65
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:35:20-62
 uses-feature#0x00020000
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:35:3-52
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:36:3-52
 	android:glEsVersion
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:35:17-49
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:36:17-49
 uses-feature#android.hardware.touchscreen
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:36:3-88
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:37:3-88
 	android:required
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:36:61-85
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:37:61-85
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:36:17-60
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:37:17-60
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:37:3-99
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:3-99
 	android:required
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:37:72-96
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:72-96
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:37:17-71
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:17-71
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:3-108
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:39:3-108
 	android:required
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:81-105
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:39:81-105
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:17-80
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:39:17-80
 uses-sdk
 INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml

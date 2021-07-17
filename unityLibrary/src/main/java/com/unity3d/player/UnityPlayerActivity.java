@@ -66,6 +66,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     public static Context mContext;
     public String[] cur_name=new String[5];
     public String[] cur_part=new String[5];
+    public String[] cur_image=new String[5];
     //Declare the buttons
     Button bt_save;
     Button bt_frame;
@@ -96,14 +97,19 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         Intent intent=getIntent();
         ArrayList<String> frame_name = intent.getStringArrayListExtra("frame_name");
         ArrayList<String> frame_value = intent.getStringArrayListExtra("frame_value");
+        ArrayList<String> frame_image = intent.getStringArrayListExtra("frame_image");
         ArrayList<String> wheelset_name = intent.getStringArrayListExtra("wheelset_name");
         ArrayList<String> wheelset_value = intent.getStringArrayListExtra("wheelset_value");
+        ArrayList<String> wheelset_image = intent.getStringArrayListExtra("wheelset_image");
         ArrayList<String> handlebar_name = intent.getStringArrayListExtra("handlebar_name");
         ArrayList<String> handlebar_value = intent.getStringArrayListExtra("handlebar_value");
+        ArrayList<String> handlebar_image = intent.getStringArrayListExtra("handlebar_image");
         ArrayList<String> saddle_name = intent.getStringArrayListExtra("saddle_name");
         ArrayList<String> saddle_value = intent.getStringArrayListExtra("saddle_value");
+        ArrayList<String> saddle_image = intent.getStringArrayListExtra("saddle_image");
         ArrayList<String> groupset_name = intent.getStringArrayListExtra("groupset_name");
         ArrayList<String> groupset_value = intent.getStringArrayListExtra("groupset_value");
+        ArrayList<String> groupset_image = intent.getStringArrayListExtra("groupset_image");
 
         //Inflate the frame layout from XML
         this.fl_forUnity = (FrameLayout)findViewById(R.id.fl_forUnity);
@@ -142,7 +148,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
             public void onClick(View v) {
                 adapter.clear();
                 for(int i=0;i<frame_name.size();i++) {
-                    adapter.addItem(new BikeData(frame_name.get((i)),frame_value.get(i)));
+                    adapter.addItem(new BikeData(frame_name.get((i)),frame_value.get(i),frame_image.get(i)));
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=0;
@@ -152,7 +158,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
             public void onClick(View v) {
                 adapter.clear();
                 for(int i=0;i<wheelset_name.size();i++) {
-                    adapter.addItem(new BikeData(wheelset_name.get((i)),wheelset_value.get(i)));
+                    adapter.addItem(new BikeData(wheelset_name.get((i)),wheelset_value.get(i),wheelset_image.get(i)));
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=1;
@@ -162,7 +168,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
             public void onClick(View v) {
                 adapter.clear();
                 for(int i=0;i<handlebar_name.size();i++) {
-                    adapter.addItem(new BikeData(handlebar_name.get((i)),handlebar_value.get(i)));
+                    adapter.addItem(new BikeData(handlebar_name.get((i)),handlebar_value.get(i),handlebar_image.get(i)));
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=2;
@@ -172,7 +178,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
             public void onClick(View v) {
                 adapter.clear();
                 for(int i=0;i<saddle_name.size();i++) {
-                    adapter.addItem(new BikeData(saddle_name.get((i)),saddle_value.get(i)));
+                    adapter.addItem(new BikeData(saddle_name.get((i)),saddle_value.get(i),saddle_image.get(i)));
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=3;
@@ -182,7 +188,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
             public void onClick(View v) {
                 adapter.clear();
                 for(int i=0;i<groupset_name.size();i++) {
-                    adapter.addItem(new BikeData(groupset_name.get((i)),groupset_value.get(i)));
+                    adapter.addItem(new BikeData(groupset_name.get((i)),groupset_value.get(i),groupset_image.get(i)));
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=4;
@@ -225,6 +231,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
             intent.putExtra("get_custom",name);
             intent.putExtra("name",cur_name);
             intent.putExtra("part",cur_part);
+            intent.putExtra("image",cur_image);
             UnityPlayerActivity.this.setResult(8080, intent);
             UnityPlayerActivity.this.finish();
             UnityPlayerActivity.this.onBackPressed();

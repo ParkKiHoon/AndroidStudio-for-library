@@ -138,6 +138,7 @@ int attr contentInsetStart 0x0
 int attr contentInsetStartWithNavigation 0x0
 int attr contrast 0x0
 int attr controlBackground 0x0
+int attr coordinatorLayoutStyle 0x0
 int attr crossfade 0x0
 int attr currentState 0x0
 int attr curveFit 0x0
@@ -239,11 +240,15 @@ int attr initialActivityCount 0x0
 int attr isLightTheme 0x0
 int attr itemPadding 0x0
 int attr keyPositionType 0x0
+int attr keylines 0x0
 int attr lastBaselineToBottomHeight 0x0
 int attr layout 0x0
 int attr layoutDescription 0x0
 int attr layoutDuringTransition 0x0
 int attr layoutManager 0x0
+int attr layout_anchor 0x0
+int attr layout_anchorGravity 0x0
+int attr layout_behavior 0x0
 int attr layout_constrainedHeight 0x0
 int attr layout_constrainedWidth 0x0
 int attr layout_constraintBaseline_creator 0x0
@@ -286,6 +291,7 @@ int attr layout_constraintWidth_default 0x0
 int attr layout_constraintWidth_max 0x0
 int attr layout_constraintWidth_min 0x0
 int attr layout_constraintWidth_percent 0x0
+int attr layout_dodgeInsetEdges 0x0
 int attr layout_editor_absoluteX 0x0
 int attr layout_editor_absoluteY 0x0
 int attr layout_goneMarginBottom 0x0
@@ -294,6 +300,8 @@ int attr layout_goneMarginLeft 0x0
 int attr layout_goneMarginRight 0x0
 int attr layout_goneMarginStart 0x0
 int attr layout_goneMarginTop 0x0
+int attr layout_insetEdge 0x0
+int attr layout_keyline 0x0
 int attr layout_optimizationLevel 0x0
 int attr limitBoundsTo 0x0
 int attr lineHeight 0x0
@@ -411,6 +419,7 @@ int attr srcCompat 0x0
 int attr stackFromEnd 0x0
 int attr staggered 0x0
 int attr state_above_anchor 0x0
+int attr statusBarBackground 0x0
 int attr subMenuArrow 0x0
 int attr submitBackground 0x0
 int attr subtitle 0x0
@@ -943,6 +952,7 @@ int id fl_forUnity 0x0
 int id fl_forUnity2 0x0
 int id flip 0x0
 int id forever 0x0
+int id glide_custom_view_target_tag 0x0
 int id gone 0x0
 int id group_divider 0x0
 int id home 0x0
@@ -1501,6 +1511,7 @@ int style Widget_AppCompat_Toolbar 0x0
 int style Widget_AppCompat_Toolbar_Button_Navigation 0x0
 int style Widget_Compat_NotificationActionContainer 0x0
 int style Widget_Compat_NotificationActionText 0x0
+int style Widget_Support_CoordinatorLayout 0x0
 int[] styleable ActionBar { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1
@@ -2066,6 +2077,17 @@ int styleable ConstraintSet_pathMotionArc 108
 int styleable ConstraintSet_pivotAnchor 109
 int styleable ConstraintSet_transitionEasing 110
 int styleable ConstraintSet_transitionPathRotate 111
+int[] styleable CoordinatorLayout { 0x0, 0x0 }
+int styleable CoordinatorLayout_keylines 0
+int styleable CoordinatorLayout_statusBarBackground 1
+int[] styleable CoordinatorLayout_Layout { 0x10100b3, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
+int styleable CoordinatorLayout_Layout_android_layout_gravity 0
+int styleable CoordinatorLayout_Layout_layout_anchor 1
+int styleable CoordinatorLayout_Layout_layout_anchorGravity 2
+int styleable CoordinatorLayout_Layout_layout_behavior 3
+int styleable CoordinatorLayout_Layout_layout_dodgeInsetEdges 4
+int styleable CoordinatorLayout_Layout_layout_insetEdge 5
+int styleable CoordinatorLayout_Layout_layout_keyline 6
 int[] styleable CustomAttribute { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable CustomAttribute_attributeName 0
 int styleable CustomAttribute_customBoolean 1

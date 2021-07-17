@@ -4,10 +4,11 @@ public class BikeData {
 
     private String name;
     private String part;
-
-    public BikeData(String name, String part) {
+    private String image;
+    public BikeData(String name, String part,String image) {
         this.name = name;
         this.part = part;
+        this.image=image;
 
     }
 
@@ -26,6 +27,14 @@ public class BikeData {
 
     public void setpart(String part) {
         this.part = part;
+    }
+
+    public String getimage() {
+        return image;
+    }
+
+    public void setimage(String image) {
+        this.image = image;
     }
 
 }

@@ -4,10 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -19,12 +22,14 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
     // 아이템 뷰를 저장하는 뷰홀더 클래스.
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView1 ;
+        ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView) ;
 
             // 뷰 객체에 대한 참조. (hold strong reference)
             textView1 = itemView.findViewById(R.id.text1) ;
+            imageView=itemView.findViewById(R.id.imageView);
         }
     }
 
@@ -49,6 +54,7 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
     @Override
     public void onBindViewHolder(SimpleTextAdapter.ViewHolder holder, int position) {
         holder.textView1.setText(mData.get(position).getname()) ;
+        Glide.with(holder.itemView.getContext()).load(mData.get(position).getimage()).into(holder.imageView);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,10 +64,12 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
                 {
                     ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name[cur_state]="";
                     ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_part[cur_state]="";
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_image[cur_state]="";
                 }
                 else{
                     ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name[cur_state]=mData.get(position).getname();
                     ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_part[cur_state]=mData.get(position).getpart();
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_image[cur_state]=mData.get(position).getimage();
                 }
             }
         });
