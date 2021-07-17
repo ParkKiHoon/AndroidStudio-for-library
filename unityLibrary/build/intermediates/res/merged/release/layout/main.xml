@@ -10,7 +10,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler1"
-        android:layout_width="0dp"
+        android:layout_width="310dp"
         android:layout_height="0dp"
         android:layout_marginTop="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,21 +45,11 @@
         app:layout_constraintStart_toEndOf="@+id/recycler1" />
 
     <Button
-        android:id="@+id/bt_estimate"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="견적"
-        app:layout_constraintBottom_toTopOf="@+id/bt_save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/recycler1" />
-
-    <Button
         android:id="@+id/bt_capture"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:text="견적"
+        android:text="캡쳐(미완성)"
         app:layout_constraintBottom_toTopOf="@+id/bt_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
