@@ -140,8 +140,14 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
 
         this.bt_save.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(),PopupActivity.class);
-                startActivityForResult(intent2,9090);
+                UnityPlayer.UnitySendMessage("Main Camera", "Capture", "박기훈");
+                Intent intent = new Intent();
+                intent.putExtra("name",cur_name);
+                intent.putExtra("part",cur_part);
+                intent.putExtra("image",cur_image);
+                UnityPlayerActivity.this.setResult(8080, intent);
+                UnityPlayerActivity.this.finish();
+                UnityPlayerActivity.this.onBackPressed();
             }
         });
         this.bt_frame.setOnClickListener(new View.OnClickListener() {
@@ -222,21 +228,6 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         UnityPlayer.UnitySendMessage("GameManager", "Show", string);
     }
 
-
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode == 9090 && resultCode == 9090) {
-            String name = data.getStringExtra("result");
-            UnityPlayer.UnitySendMessage("Main Camera", "Capture", "박기훈");
-            Intent intent = new Intent();
-            intent.putExtra("get_custom",name);
-            intent.putExtra("name",cur_name);
-            intent.putExtra("part",cur_part);
-            intent.putExtra("image",cur_image);
-            UnityPlayerActivity.this.setResult(8080, intent);
-            UnityPlayerActivity.this.finish();
-            UnityPlayerActivity.this.onBackPressed();
-        }
-    }
     // When Unity player unloaded move task to background
     @Override public void onUnityPlayerUnloaded() {
         moveTaskToBack(true);
