@@ -1,6 +1,9 @@
 package com.unity3d.player;
 
 import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,22 +15,29 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.ViewHolder>  {
 
     int cur_state;
-    private ArrayList<BikeData> mData = null ;
+    public ArrayList<BikeData> mData = null ;
 
     // 아이템 뷰를 저장하는 뷰홀더 클래스.
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView1 ;
+        TextView textStock ;
         ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView) ;
 
             // 뷰 객체에 대한 참조. (hold strong reference)
+            textStock=itemView.findViewById(R.id.text_stock);
             textView1 = itemView.findViewById(R.id.text1) ;
             imageView=itemView.findViewById(R.id.imageView);
         }
@@ -55,7 +65,7 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
     public void onBindViewHolder(SimpleTextAdapter.ViewHolder holder, int position) {
         holder.textView1.setText(mData.get(position).getname()) ;
         Glide.with(holder.itemView.getContext()).load(mData.get(position).getimage()).into(holder.imageView);
-
+        holder.textStock.setText(mData.get(position).getstock());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,4 +98,11 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
     public void addItem(BikeData data){
         mData.add(data);
     }
+
+    public void addStock(String string,int position){
+        mData.get(position).setstock(string);
+        notifyItemChanged(position);
+    }
+
+
 }

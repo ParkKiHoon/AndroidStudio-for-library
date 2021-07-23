@@ -9,6 +9,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'org.jsoup:jsoup:1.11.3'
 }
 
 android {

@@ -1079,6 +1079,7 @@ id text1
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id text_stock
 id time
 id time_in_post
 id title
@@ -1090,7 +1091,6 @@ id topPanel
 id transitionToEnd
 id transitionToStart
 id triangle
-id tv_popup
 id txtText
 id unchecked
 id uniform

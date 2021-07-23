@@ -24,4 +24,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text_stock"
+        android:layout_width="73dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
+import android.os.Message;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -46,6 +47,10 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -67,6 +72,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     public String[] cur_name=new String[5];
     public String[] cur_part=new String[5];
     public String[] cur_image=new String[5];
+    SimpleTextAdapter adapter;
     //Declare the buttons
     Button bt_save;
     Button bt_frame;
@@ -75,6 +81,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     Button bt_saddle;
     Button bt_groupset;
     ImageView imageView;
+    int position;
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
@@ -133,9 +140,8 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         recyclerView.setLayoutManager(new LinearLayoutManager(this)) ;
 
         // 리사이클러뷰에 SimpleTextAdapter 객체 지정.
-        SimpleTextAdapter adapter = new SimpleTextAdapter(list) ;
+        adapter = new SimpleTextAdapter(list) ;
         recyclerView.setAdapter(adapter) ;
-
 
 
         this.bt_save.setOnClickListener(new View.OnClickListener() {
@@ -158,6 +164,38 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=0;
+                position=0;
+                for(int i=0;i<frame_name.size();i++) {
+                    final Bundle bundle = new Bundle();
+                    String url = "https://search.shopping.naver.com/search/all?query=" + frame_name.get(i) + "&cat_id=&frm=NVSHATC";
+                    new Thread() {
+                        public void run() {
+                            String num;
+                            Document doc = null;
+                            try {
+                                doc = Jsoup.connect(url).get();
+                                Elements content = doc.select("span.subFilter_num__2x0jq");
+                                num = content.text();
+
+                                if (num != "") {
+                                    bundle.putString("link", "재고있음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+                                if (num == "") {
+                                    bundle.putString("link", "재고없음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
+                }
             }
         });
         this.bt_wheelset.setOnClickListener(new View.OnClickListener() {
@@ -168,6 +206,39 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=1;
+                position=0;
+                for(int i=0;i<wheelset_name.size();i++) {
+                    final Bundle bundle = new Bundle();
+                    String url = "https://search.shopping.naver.com/search/all?query=" + wheelset_name.get(i) + "&cat_id=&frm=NVSHATC";
+                    new Thread() {
+                        public void run() {
+                            String num;
+                            Document doc = null;
+                            try {
+                                doc = Jsoup.connect(url).get();
+                                Elements content = doc.select("span.subFilter_num__2x0jq");
+                                num = content.text();
+
+                                if (num != "") {
+                                    bundle.putString("link", "재고있음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+                                if (num == "") {
+                                    bundle.putString("link", "재고없음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
+                }
+
             }
         });
         this.bt_handlebar.setOnClickListener(new View.OnClickListener() {
@@ -178,6 +249,38 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=2;
+                position=0;
+                for(int i=0;i<handlebar_name.size();i++) {
+                    final Bundle bundle = new Bundle();
+                    String url = "https://search.shopping.naver.com/search/all?query=" + handlebar_name.get(i) + "&cat_id=&frm=NVSHATC";
+                    new Thread() {
+                        public void run() {
+                            String num;
+                            Document doc = null;
+                            try {
+                                doc = Jsoup.connect(url).get();
+                                Elements content = doc.select("span.subFilter_num__2x0jq");
+                                num = content.text();
+
+                                if (num != "") {
+                                    bundle.putString("link", "재고있음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+                                if (num == "") {
+                                    bundle.putString("link", "재고없음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
+                }
             }
         });
         this.bt_saddle.setOnClickListener(new View.OnClickListener() {
@@ -188,6 +291,38 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=3;
+                position=0;
+                for(int i=0;i<saddle_name.size();i++) {
+                    final Bundle bundle = new Bundle();
+                    String url = "https://search.shopping.naver.com/search/all?query=" + saddle_name.get(i) + "&cat_id=&frm=NVSHATC";
+                    new Thread() {
+                        public void run() {
+                            String num;
+                            Document doc = null;
+                            try {
+                                doc = Jsoup.connect(url).get();
+                                Elements content = doc.select("span.subFilter_num__2x0jq");
+                                num = content.text();
+
+                                if (num != "") {
+                                    bundle.putString("link", "재고있음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+                                if (num == "") {
+                                    bundle.putString("link", "재고없음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
+                }
             }
         });
         this.bt_groupset.setOnClickListener(new View.OnClickListener() {
@@ -198,6 +333,38 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
                 }
                 adapter.notifyDataSetChanged();
                 adapter.cur_state=4;
+                position=0;
+                for(int i=0;i<groupset_name.size();i++) {
+                    final Bundle bundle = new Bundle();
+                    String url = "https://search.shopping.naver.com/search/all?query=" + groupset_name.get(i) + "&cat_id=&frm=NVSHATC";
+                    new Thread() {
+                        public void run() {
+                            String num;
+                            Document doc = null;
+                            try {
+                                doc = Jsoup.connect(url).get();
+                                Elements content = doc.select("span.subFilter_num__2x0jq");
+                                num = content.text();
+
+                                if (num != "") {
+                                    bundle.putString("link", "재고있음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+                                if (num == "") {
+                                    bundle.putString("link", "재고없음");
+                                    Message msg = handler.obtainMessage();
+                                    msg.setData(bundle);
+                                    handler.sendMessage(msg);
+                                }
+
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
+                }
             }
         });
 
@@ -224,9 +391,20 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
 
 
 
+
     void SendToUnity(String string){
         UnityPlayer.UnitySendMessage("GameManager", "Show", string);
     }
+
+
+    Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            Bundle bundle = msg.getData();
+            adapter.addStock(bundle.getString("link"),position);
+            position++;
+        }
+    };
 
     // When Unity player unloaded move task to background
     @Override public void onUnityPlayerUnloaded() {

@@ -27,6 +27,7 @@ id imageView
 id price_in_post
 id recycler1
 id text1
+id text_stock
 id time_in_post
 id txtText
 id user_id_in_post
