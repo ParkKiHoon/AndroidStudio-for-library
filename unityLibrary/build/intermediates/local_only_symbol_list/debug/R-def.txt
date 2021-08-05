@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 drawable btn_background
 drawable custom_btn
+drawable custom_btn2
 drawable round
 drawable saa
 id abb123

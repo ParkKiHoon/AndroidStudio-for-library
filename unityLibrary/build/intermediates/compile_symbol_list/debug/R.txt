@@ -814,6 +814,7 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
 int drawable custom_btn 0x0
+int drawable custom_btn2 0x0
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
 int drawable notification_bg_low 0x0
