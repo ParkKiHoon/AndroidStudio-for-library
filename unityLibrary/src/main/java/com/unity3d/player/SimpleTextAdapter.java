@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,7 +70,21 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((UnityPlayerActivity)UnityPlayerActivity.mContext).SendToUnity(mData.get(position).getpart());
+                if(((UnityPlayerActivity)UnityPlayerActivity.mContext).btn_state[cur_state]==0) {
+                    Log.d("here", Integer.toString(((UnityPlayerActivity)UnityPlayerActivity.mContext).btn_state[cur_state]));
+                    ((UnityPlayerActivity)UnityPlayerActivity.mContext).btn_state[cur_state]=1;
+                    ((UnityPlayerActivity) UnityPlayerActivity.mContext).SendToUnity(mData.get(position).getpart());
+                }
+                else{
+                    if(cur_state==0){
+                        for(int i=1;i<5;i++)
+                            ((UnityPlayerActivity)UnityPlayerActivity.mContext).btn_state[i]=0;
+                    }
+                    Log.d("here", Integer.toString(((UnityPlayerActivity)UnityPlayerActivity.mContext).btn_state[cur_state]));
+                    ((UnityPlayerActivity) UnityPlayerActivity.mContext).SendToUnity(mData.get(position).getpart());
+                    ((UnityPlayerActivity) UnityPlayerActivity.mContext).SendToUnity(mData.get(position).getpart());
+                }
+                ((UnityPlayerActivity)UnityPlayerActivity.mContext).ButtonState();
                 if(mData.get(position).getname().equals(((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name))
                 {
                     ((UnityPlayerActivity)UnityPlayerActivity.mContext).cur_name[cur_state]="";

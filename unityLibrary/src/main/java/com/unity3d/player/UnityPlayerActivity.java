@@ -82,6 +82,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     Button bt_groupset;
     ImageView imageView;
     int position;
+    int[] btn_state=new int[]{0,0,0,0,0};
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
@@ -394,6 +395,39 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
 
     void SendToUnity(String string){
         UnityPlayer.UnitySendMessage("GameManager", "Show", string);
+    }
+
+    void ButtonState(){
+        if(btn_state[0]==0){
+            bt_frame.setBackgroundResource(R.drawable.custom_btn);
+        }
+        else{
+            bt_frame.setBackgroundResource(R.drawable.custom_btn2);
+        }
+        if(btn_state[1]==0){
+            bt_wheelset.setBackgroundResource(R.drawable.custom_btn);
+        }
+        else{
+            bt_wheelset.setBackgroundResource(R.drawable.custom_btn2);
+        }
+        if(btn_state[2]==0){
+            bt_handlebar.setBackgroundResource(R.drawable.custom_btn);
+        }
+        else{
+            bt_handlebar.setBackgroundResource(R.drawable.custom_btn2);
+        }
+        if(btn_state[3]==0){
+            bt_saddle.setBackgroundResource(R.drawable.custom_btn);
+        }
+        else{
+            bt_saddle.setBackgroundResource(R.drawable.custom_btn2);
+        }
+        if(btn_state[4]==0){
+            bt_groupset.setBackgroundResource(R.drawable.custom_btn);
+        }
+        else{
+            bt_groupset.setBackgroundResource(R.drawable.custom_btn2);
+        }
     }
 
 

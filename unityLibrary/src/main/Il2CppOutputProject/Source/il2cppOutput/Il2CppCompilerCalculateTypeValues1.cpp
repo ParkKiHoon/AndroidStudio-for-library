@@ -210,6 +210,8 @@ struct RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09;
 struct RectTransform_t8A6A306FB29A6C8C22010CF9040E319753571072;
 // UnityEngine.UI.Selectable[]
 struct SelectableU5BU5D_tECF9F5BDBF0652A937D18F10C883EFDAE2E62535;
+// System.Single[]
+struct SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA;
 // UnityEngine.Sprite
 struct Sprite_t5B10B1178EC2E6F53D33FFD77557F31C08A51ED9;
 // UnityEngine.UI.Text
@@ -4104,6 +4106,10 @@ public:
 	int32_t ___showCnt_11;
 	// System.Int32 ShowParts::divideCnt
 	int32_t ___divideCnt_12;
+	// System.Single[] ShowParts::cal_price
+	SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* ___cal_price_13;
+	// System.Single[] ShowParts::cal_weight
+	SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* ___cal_weight_14;
 
 public:
 	inline static int32_t get_offset_of_objNum_4() { return static_cast<int32_t>(offsetof(ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848, ___objNum_4)); }
@@ -4181,6 +4187,24 @@ public:
 	inline void set_divideCnt_12(int32_t value)
 	{
 		___divideCnt_12 = value;
+	}
+
+	inline static int32_t get_offset_of_cal_price_13() { return static_cast<int32_t>(offsetof(ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848, ___cal_price_13)); }
+	inline SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* get_cal_price_13() const { return ___cal_price_13; }
+	inline SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA** get_address_of_cal_price_13() { return &___cal_price_13; }
+	inline void set_cal_price_13(SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* value)
+	{
+		___cal_price_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___cal_price_13), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_cal_weight_14() { return static_cast<int32_t>(offsetof(ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848, ___cal_weight_14)); }
+	inline SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* get_cal_weight_14() const { return ___cal_weight_14; }
+	inline SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA** get_address_of_cal_weight_14() { return &___cal_weight_14; }
+	inline void set_cal_weight_14(SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* value)
+	{
+		___cal_weight_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___cal_weight_14), (void*)value);
 	}
 };
 
@@ -7290,7 +7314,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2210[2] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2211;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2211 = { sizeof (ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2211[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2211[11] = 
 {
 	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_objNum_4(),
 	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_totalWeight_5(),
@@ -7301,6 +7325,8 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2211[9] =
 	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_frameData_10(),
 	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_showCnt_11(),
 	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_divideCnt_12(),
+	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_cal_price_13(),
+	ShowParts_t9A82B87113B2DF73D38DE0C638C724676FCD4848::get_offset_of_cal_weight_14(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
