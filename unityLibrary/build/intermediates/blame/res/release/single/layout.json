@@ -148,6 +148,10 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\94a3306c6104de11d1ecb0ad59da2857\\appcompat-1.2.0\\res\\layout\\abc_cascading_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\layout\\activity_ai_sub.xml",
+        "source": "C:\\AndroidTest\\unityLibrary\\src\\main\\res\\layout\\activity_ai_sub.xml"
+    },
+    {
         "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_tooltip.xml",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\94a3306c6104de11d1ecb0ad59da2857\\appcompat-1.2.0\\res\\layout\\abc_tooltip.xml"
     },
@@ -162,6 +166,10 @@
     {
         "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\94a3306c6104de11d1ecb0ad59da2857\\appcompat-1.2.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\layout\\activity_ai_main.xml",
+        "source": "C:\\AndroidTest\\unityLibrary\\src\\main\\res\\layout\\activity_ai_main.xml"
     },
     {
         "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",

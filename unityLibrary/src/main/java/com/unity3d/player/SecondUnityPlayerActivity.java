@@ -95,10 +95,10 @@ public class SecondUnityPlayerActivity extends Activity implements IUnityPlayerL
         time_in_post.setText(time);
         price_in_post.setText(price);
         String frame_split[]=cur_part[0].split("/");
-        String wheelset_split[]=cur_part[0].split("/");
-        String handlebar_split[]=cur_part[0].split("/");
-        String saddle_split[]=cur_part[0].split("/");
-        String groupset_split[]=cur_part[0].split("/");
+        String wheelset_split[]=cur_part[1].split("/");
+        String handlebar_split[]=cur_part[2].split("/");
+        String saddle_split[]=cur_part[3].split("/");
+        String groupset_split[]=cur_part[4].split("/");
         contents1.setText(cur_name[0]+"("+frame_split[1]+"kg,"+frame_split[2]+"₩)");
         contents2.setText(cur_name[1]+"("+wheelset_split[1]+"kg,"+wheelset_split[2]+"₩)");
         contents3.setText(cur_name[2]+"("+handlebar_split[1]+"kg,"+handlebar_split[2]+"₩)");
