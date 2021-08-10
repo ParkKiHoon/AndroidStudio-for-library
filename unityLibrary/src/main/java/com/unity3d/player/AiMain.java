@@ -36,6 +36,8 @@ public class AiMain extends Activity implements IUnityPlayerLifecycleEvents
     private String[] FrameNames ;
     private String[] FrameValue ;
     private String[] FrameId ;
+    float rate=0;
+    int temp_val=0;
     private ArrayList<ArrayList<String>> review_nickname=new ArrayList<ArrayList<String>>();
     private ArrayList<ArrayList<String>> review_content=new ArrayList<ArrayList<String>>();
     private ArrayList<ArrayList<String>> review_rating=new ArrayList<ArrayList<String>>();
@@ -172,8 +174,26 @@ public class AiMain extends Activity implements IUnityPlayerLifecycleEvents
                 ratingBar2.setVisibility(View.GONE);
             }
         });
+        btn_ai_sub7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.putExtra("content",et3.getText().toString());
+                intent.putExtra("rating",rate);
+                intent.putExtra("id",FrameId[temp_val]);
+                AiMain.this.setResult(1101, intent);
+                AiMain.this.finish();
+            }
+        });
 
-
+        btn_ai_sub8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                AiMain.this.setResult(1102, intent);
+                AiMain.this.finish();
+            }
+        });
         SettingFirst();
     }
 
@@ -333,10 +353,10 @@ public class AiMain extends Activity implements IUnityPlayerLifecycleEvents
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            int temp_val=0;
                             for(int i=0;i<5;i++){
                                 if(sendMsg[i][0].equals(resultNames[0])) {
                                     temp_val=i;
+                                    rate=Float.parseFloat(sendMsg[i][1]);
                                 }
                             }
                             tv13.setText(FrameNames[temp_val]+" / "+FrameValue[temp_val].split("/")[1]+"kg / "+FrameValue[temp_val].split("/")[2]+" ₩");

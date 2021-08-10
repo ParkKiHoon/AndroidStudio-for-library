@@ -17,8 +17,6 @@ id bt_handlebar
 id bt_saddle
 id bt_save
 id bt_wheelset
-id btn_ai_sub
-id btn_ai_sub2
 id btn_ai_sub7
 id btn_ai_sub8
 id btn_chat_in_post
@@ -26,14 +24,12 @@ id connect_btn
 id constraintLayout
 id constraintLayout1
 id constraintLayout8
-id constraintLayout9
 id contents1
 id contents2
 id contents3
 id contents4
 id contents5
 id editTextTextPersonName
-id et1
 id et3
 id fl_forUnity
 id fl_forUnity2
@@ -42,7 +38,6 @@ id get_result_btn
 id imageView
 id line4
 id price_in_post
-id product_image1
 id ratingBar
 id ratingBar2
 id recycler1
@@ -57,12 +52,10 @@ id tv3
 id tv4
 id tv5
 id tv6
-id tv7
 id txtText
 id user_id_in_post
 id view2
 layout activity_ai_main
-layout activity_ai_sub
 layout activity_popup
 layout activity_post
 layout main
