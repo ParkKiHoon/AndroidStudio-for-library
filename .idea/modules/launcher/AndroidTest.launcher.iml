@@ -30,9 +30,9 @@
     <output-test url="file://$MODULE_DIR$/../../../launcher/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../launcher">
-      <sourceFolder url="file://$MODULE_DIR$/../../../launcher/src/main/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../launcher/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../launcher/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../launcher/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../launcher/src/main/res" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../../launcher/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../launcher/build" />
     </content>

@@ -4,7 +4,7 @@ ADDED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:3:1-9:12
 INJECTED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:3:1-9:12
 INJECTED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:3:1-9:12
 INJECTED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:3:1-9:12
-MERGED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:3:1-87:12
+MERGED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:3:1-102:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\0e31ad549c7bc1a7f2321ef428df1cfa\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\68aa6790033ee52a091a38e16fe5b59a\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\8a500176d9de590b26f272466539414c\recyclerview-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -78,8 +78,8 @@ ADDED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:3-163
 		ADDED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:7:135-160
 application
 ADDED from C:\AndroidTest\launcher\src\main\AndroidManifest.xml:8:3-116
-MERGED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-85:19
-MERGED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-85:19
+MERGED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-100:19
+MERGED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-100:19
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\0e31ad549c7bc1a7f2321ef428df1cfa\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\0e31ad549c7bc1a7f2321ef428df1cfa\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Android_Avd_Gradle\.gradle\caches\transforms-2\files-2.1\68aa6790033ee52a091a38e16fe5b59a\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -185,7 +185,7 @@ ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\libra
 	android:name
 		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-72
 activity#com.unity3d.player.SecondUnityPlayerActivity
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-47:20
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-41:20
 	android:screenOrientation
 		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-51
 	android:process
@@ -200,77 +200,93 @@ ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\libra
 		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-54
 	android:name
 		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-72
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-39:29
-action#android.intent.action.MAIN
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:25-66
-category#android.intent.category.LAUNCHER
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:17-77
-	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:27-74
 meta-data#unityplayer.UnityActivity
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:40
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-37:40
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-37
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:17-37
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-57
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-57
 meta-data#android.notch_support
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-46:40
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-40:40
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:17-37
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-37
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:17-53
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:17-53
 activity#com.unity3d.player.PopupActivity
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:9-50:59
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:9-44:59
 	android:theme
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-56
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:13-60
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-60
 activity#com.unity3d.player.UnityPlayerActivity
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:9-65:20
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:9-59:20
 	android:screenOrientation
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:13-51
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-51
 	android:process
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-43
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-43
 	android:launchMode
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-44
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:13-44
 	android:hardwareAccelerated
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:13-48
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-48
 	android:configChanges
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:13-194
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-194
 	android:theme
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-54
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-54
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-66
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-66
+activity#com.unity3d.player.Ai_Frame_Main
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:9-80:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:13-51
+	android:process
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:13-43
+	android:launchMode
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:13-48
+	android:configChanges
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-194
+	android:theme
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-54
+	android:name
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-60
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-72:29
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:17-69
+	android:name
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:17-77
+	android:name
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:27-74
 meta-data#unityplayer.ForwardNativeEventsToDalvik
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:9-72:37
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:85:9-87:37
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-34
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:13-34
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:13-67
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:86:13-67
 meta-data#unity.splash-mode
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:9-75:33
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:88:9-90:33
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:13-30
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:90:13-30
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:13-45
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:89:13-45
 meta-data#unity.splash-enable
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:9-78:36
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:91:9-93:36
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-33
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:93:13-33
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:13-47
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:92:13-47
 meta-data#notch.config
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:9-81:50
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:94:9-96:50
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:13-47
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:96:13-47
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:13-40
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:95:13-40
 meta-data#unity.build-id
-ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:9-84:68
+ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:97:9-99:68
 	android:value
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:84:13-65
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:99:13-65
 	android:name
-		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:13-42
+		ADDED from [:unityLibrary] C:\AndroidTest\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:98:13-42

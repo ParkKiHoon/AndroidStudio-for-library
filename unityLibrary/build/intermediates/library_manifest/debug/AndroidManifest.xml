@@ -43,6 +43,9 @@
             android:name="com.unity3d.player.PopupActivity"
             android:theme="@android:style/Theme.Dialog" />
         <activity
+            android:name="com.unity3d.player.ReviewActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
             android:name="com.unity3d.player.UnityPlayerActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
             android:hardwareAccelerated="false"
@@ -58,7 +61,7 @@
                 android:value="true" />
         </activity>
         <activity
-            android:name="com.unity3d.player.AiMain"
+            android:name="com.unity3d.player.Ai_Frame_Main"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
             android:hardwareAccelerated="false"
             android:launchMode="singleTask"

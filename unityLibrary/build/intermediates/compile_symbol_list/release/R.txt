@@ -804,6 +804,8 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x0
 int drawable abc_textfield_search_default_mtrl_alpha 0x0
 int drawable abc_textfield_search_material 0x0
 int drawable abc_vector_test 0x0
+int drawable ai1 0x0
+int drawable ai2 0x0
 int drawable btn_background 0x0
 int drawable btn_checkbox_checked_mtrl 0x0
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x0
@@ -829,8 +831,13 @@ int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
 int drawable round 0x0
 int drawable saa 0x0
+int drawable self3 0x0
+int drawable thumb 0x0
 int drawable tooltip_frame_dark 0x0
 int drawable tooltip_frame_light 0x0
+int font font 0x0
+int font sedansc 0x0
+int font seoulhangang 0x0
 int id Line1 0x0
 int id Line2 0x0
 int id NO_DEBUG 0x0
@@ -892,6 +899,7 @@ int id action_text 0x0
 int id actions 0x0
 int id activity_chooser_view_content 0x0
 int id add 0x0
+int id ai_finish 0x0
 int id ai_text 0x0
 int id alertTitle 0x0
 int id aligned 0x0
@@ -926,7 +934,6 @@ int id chronometer 0x0
 int id connect_btn 0x0
 int id constraintLayout 0x0
 int id constraintLayout1 0x0
-int id constraintLayout8 0x0
 int id content 0x0
 int id contentPanel 0x0
 int id contents1 0x0
@@ -974,7 +981,8 @@ int id icon_group 0x0
 int id ignore 0x0
 int id ignoreRequest 0x0
 int id image 0x0
-int id imageView 0x0
+int id imageView4 0x0
+int id imageView5 0x0
 int id info 0x0
 int id invisible 0x0
 int id italic 0x0
@@ -983,6 +991,7 @@ int id jumpToEnd 0x0
 int id jumpToStart 0x0
 int id layout 0x0
 int id left 0x0
+int id line 0x0
 int id line1 0x0
 int id line3 0x0
 int id line4 0x0
@@ -1015,9 +1024,16 @@ int id progress_horizontal 0x0
 int id radio 0x0
 int id ratingBar 0x0
 int id ratingBar2 0x0
+int id ratingBar3 0x0
+int id ratingBar5 0x0
+int id ratingBar6 0x0
+int id ratingBar7 0x0
 int id rectangles 0x0
 int id recycler1 0x0
 int id reverseSawtooth 0x0
+int id review_dialog 0x0
+int id review_iv 0x0
+int id review_tv 0x0
 int id right 0x0
 int id right_icon 0x0
 int id right_side 0x0
@@ -1067,7 +1083,6 @@ int id tag_transition_group 0x0
 int id tag_unhandled_key_event_manager 0x0
 int id tag_unhandled_key_listeners 0x0
 int id text 0x0
-int id text1 0x0
 int id text2 0x0
 int id textSpacerNoButtons 0x0
 int id textSpacerNoTitle 0x0
@@ -1080,6 +1095,7 @@ int id title_template 0x0
 int id top 0x0
 int id topPanel 0x0
 int id triangle 0x0
+int id tv0 0x0
 int id tv11 0x0
 int id tv12 0x0
 int id tv13 0x0
@@ -1088,11 +1104,14 @@ int id tv3 0x0
 int id tv4 0x0
 int id tv5 0x0
 int id tv6 0x0
+int id tv7 0x0
+int id tv8 0x0
 int id txtText 0x0
 int id unchecked 0x0
 int id uniform 0x0
 int id up 0x0
 int id user_id_in_post 0x0
+int id view 0x0
 int id view2 0x0
 int id visible 0x0
 int id wrap 0x0
@@ -1149,6 +1168,8 @@ int layout notification_template_icon_group 0x0
 int layout notification_template_part_chronometer 0x0
 int layout notification_template_part_time 0x0
 int layout recyclerview_item 0x0
+int layout review_dialog 0x0
+int layout review_item 0x0
 int layout select_dialog_item_material 0x0
 int layout select_dialog_multichoice_material 0x0
 int layout select_dialog_singlechoice_material 0x0

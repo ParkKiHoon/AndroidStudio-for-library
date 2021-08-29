@@ -806,6 +806,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable custom_btn
+drawable custom_btn2
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -820,11 +821,14 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable round
 drawable saa
+drawable thumb
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
+id Line1
+id Line2
 id META
 id NO_DEBUG
 id SHIFT
@@ -887,6 +891,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id ai_text
 id alertTitle
 id aligned
 id always
@@ -912,6 +917,8 @@ id bt_handlebar
 id bt_saddle
 id bt_save
 id bt_wheelset
+id btn_ai_sub7
+id btn_ai_sub8
 id btn_chat_in_post
 id buttonPanel
 id cache_measures
@@ -923,7 +930,10 @@ id checkbox
 id checked
 id chronometer
 id collapseActionView
+id connect_btn
 id constraintLayout
+id constraintLayout1
+id constraintLayout8
 id content
 id contentPanel
 id contents1
@@ -958,12 +968,15 @@ id easeOut
 id editTextTextPersonName
 id edit_query
 id end
+id et3
 id expand_activities_button
 id expanded_menu
 id fl_forUnity
 id fl_forUnity2
+id fl_forUnity3
 id flip
 id forever
+id get_result_btn
 id glide_custom_view_target_tag
 id gone
 id graph
@@ -991,6 +1004,7 @@ id layout
 id left
 id line1
 id line3
+id line4
 id linear
 id listMode
 id list_item
@@ -1019,6 +1033,8 @@ id price_in_post
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
+id ratingBar2
 id ratio
 id rectangles
 id recycler1
@@ -1080,6 +1096,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id text_stock
+id thumbImage
 id time
 id time_in_post
 id title
@@ -1091,6 +1108,13 @@ id topPanel
 id transitionToEnd
 id transitionToStart
 id triangle
+id tv11
+id tv12
+id tv13
+id tv2
+id tv4
+id tv5
+id tv6
 id txtText
 id unchecked
 id uniform
@@ -1098,7 +1122,6 @@ id unitySurfaceView
 id up
 id useLogo
 id user_id_in_post
-id view
 id view2
 id visible
 id withText
@@ -1144,6 +1167,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_ai_main
 layout activity_popup
 layout activity_post
 layout custom_dialog

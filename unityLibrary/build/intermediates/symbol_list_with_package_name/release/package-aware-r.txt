@@ -805,6 +805,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ai1
+drawable ai2
 drawable btn_background
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -830,8 +832,13 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable round
 drawable saa
+drawable self3
+drawable thumb
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font font
+font sedansc
+font seoulhangang
 id Line1
 id Line2
 id NO_DEBUG
@@ -893,6 +900,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id ai_finish
 id ai_text
 id alertTitle
 id aligned
@@ -927,7 +935,6 @@ id chronometer
 id connect_btn
 id constraintLayout
 id constraintLayout1
-id constraintLayout8
 id content
 id contentPanel
 id contents1
@@ -975,7 +982,8 @@ id icon_group
 id ignore
 id ignoreRequest
 id image
-id imageView
+id imageView4
+id imageView5
 id info
 id invisible
 id italic
@@ -984,6 +992,7 @@ id jumpToEnd
 id jumpToStart
 id layout
 id left
+id line
 id line1
 id line3
 id line4
@@ -1016,9 +1025,16 @@ id progress_horizontal
 id radio
 id ratingBar
 id ratingBar2
+id ratingBar3
+id ratingBar5
+id ratingBar6
+id ratingBar7
 id rectangles
 id recycler1
 id reverseSawtooth
+id review_dialog
+id review_iv
+id review_tv
 id right
 id right_icon
 id right_side
@@ -1068,7 +1084,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
-id text1
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -1081,6 +1096,7 @@ id title_template
 id top
 id topPanel
 id triangle
+id tv0
 id tv11
 id tv12
 id tv13
@@ -1089,11 +1105,14 @@ id tv3
 id tv4
 id tv5
 id tv6
+id tv7
+id tv8
 id txtText
 id unchecked
 id uniform
 id up
 id user_id_in_post
+id view
 id view2
 id visible
 id wrap
@@ -1150,6 +1169,8 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout recyclerview_item
+layout review_dialog
+layout review_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
