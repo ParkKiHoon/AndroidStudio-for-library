@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\font\\font.xml",
+        "source": "C:\\AndroidTest\\unityLibrary\\src\\main\\res\\font\\font.xml"
+    },
+    {
+        "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\font\\sedansc.ttf",
+        "source": "C:\\AndroidTest\\unityLibrary\\src\\main\\res\\font\\sedansc.ttf"
+    },
+    {
+        "merged": "C:\\AndroidTest\\unityLibrary\\build\\intermediates\\res\\merged\\release\\font\\seoulhangang.ttf",
+        "source": "C:\\AndroidTest\\unityLibrary\\src\\main\\res\\font\\seoulhangang.ttf"
+    }
+]

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-54dp">
+
+
+        <FrameLayout
+            android:id="@+id/fl_forUnity3"
+            android:layout_width="0dp"
+            android:layout_height="295dp"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="15dp"
+            android:background="#FBFBFA"
+            app:layout_constraintBottom_toTopOf="@+id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2">
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="51dp"
+            android:fontFamily="@font/seoulhangang"
+            android:gravity="center"
+            android:text="별점을 내려주세요!\n 선호도를 측정해 부품을 추천해드립니다"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/Line1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:isIndicator="false"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/tv0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <Button
+            android:id="@+id/connect_btn"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/font"
+            android:text="다음"
+            android:textColor="#D5D5D5"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar2"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
+
+        <View
+            android:id="@+id/Line1"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="14dp"
+            android:background="#e7e6e6"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv0" />
+
+
+        <Button
+            android:id="@+id/get_result_btn"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:text="AI 결과"
+            android:textColor="#D5D5D5"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar2"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:background="#e7e6e6"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl_forUnity3" />
+
+        <TextView
+            android:id="@+id/ai_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="162dp"
+            android:fontFamily="@font/seoulhangang"
+            android:text="1 / 5"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ai_finish"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/seoulhangang"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/tv6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar5"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar5" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/seoulhangang"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/tv5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar6"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar6" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/seoulhangang"
+            android:singleLine="true"
+            android:textColor="#787878"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar6"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/seoulhangang"
+            android:singleLine="true"
+            android:textColor="#787878"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv4"
+            app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+        <TextView
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/seoulhangang"
+            android:gravity="center"
+            android:text="치넬리 벨트릭스"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/tv2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ai_finish" />
+
+        <TextView
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:text="유저 리뷰"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Line1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/seoulhangang"
+            android:text="1.75kg | 2,040,000₩ | 3.5 점"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/fl_forUnity3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="49dp"
+            android:gravity="center"
+            android:text="CUBike AI가 추천하는 부품 입니다."
+            android:textColor="#045D68"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl_forUnity3" />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv11" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="325dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="38dp"
+            android:ems="10"
+            android:hint="마음에 드신다면 한줄평을 입력해주세요!"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv13" />
+
+        <Button
+            android:id="@+id/btn_ai_sub8"
+            android:layout_width="247dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="82dp"
+            android:background="@drawable/btn_background"
+            android:text="완료"
+            android:textColor="#D5D5D5"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:backgroundTint="#40C4FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et3" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="400dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="6dp"
+            android:background="#e7e6e6"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ai_sub8" />
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="63dp"
+            android:gravity="center"
+            android:text="마음에 들지 않으신가요?"
+            android:textColor="#045D68"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+        <Button
+            android:id="@+id/btn_ai_sub7"
+            android:layout_width="247dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="82dp"
+            android:background="@drawable/btn_background"
+            android:text="다시 추천받기"
+            android:textColor="#D5D5D5"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:backgroundTint="#40C4FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv12" />
+
+        <ImageView
+            android:id="@+id/ai_finish"
+            android:layout_width="39dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="27dp"
+            app:layout_constraintEnd_toStartOf="@+id/ai_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/self3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="142dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar3"
+            android:src="@drawable/ai1"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="96dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ai2" />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="137dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toTopOf="@+id/tv4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/Line1" />
+
+        <RatingBar
+            android:id="@+id/ratingBar6"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="137dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toTopOf="@+id/tv3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+        <RatingBar
+            android:id="@+id/ratingBar7"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="29dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toTopOf="@+id/tv8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="31dp"
+            android:fontFamily="@font/seoulhangang"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar7" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="49dp"
+            android:fontFamily="@font/seoulhangang"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar7"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
