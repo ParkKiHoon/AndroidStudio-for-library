@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 drawable ai1
 drawable ai2
+drawable back
 drawable btn_background
 drawable custom_btn
 drawable custom_btn2
@@ -9,6 +10,7 @@ drawable round
 drawable saa
 drawable self3
 drawable thumb
+drawable unity1
 font font
 font sedansc
 font seoulhangang
@@ -17,8 +19,6 @@ id Line2
 id abb123
 id ai_finish
 id ai_text
-id bt_capture
-id bt_estimate
 id bt_frame
 id bt_groupset
 id bt_handlebar
@@ -42,10 +42,17 @@ id fl_forUnity
 id fl_forUnity2
 id fl_forUnity3
 id get_result_btn
+id imageView
 id imageView4
 id imageView5
 id line
+id line2
 id line4
+id line5
+id line6
+id line7
+id line8
+id line9
 id price_in_post
 id ratingBar
 id ratingBar2
@@ -57,7 +64,9 @@ id recycler1
 id review_dialog
 id review_iv
 id review_tv
-id text_stock
+id review_tv2
+id textView
+id text_price
 id time_in_post
 id tv0
 id tv11
@@ -74,9 +83,12 @@ id txtText
 id user_id_in_post
 id view
 id view2
+id view3
 layout activity_ai_main
+layout activity_back
 layout activity_popup
 layout activity_post
+layout activity_post_third
 layout main
 layout recyclerview_item
 layout review_dialog

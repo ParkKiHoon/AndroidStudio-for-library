@@ -1312,11 +1312,12 @@ IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2201[1];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2202[6];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2203[1];
 IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2205[1];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2209[6];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2210[15];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2211[2];
-IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2212[11];
-IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[2213] = 
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2209[1];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2210[6];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2211[15];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2212[2];
+IL2CPP_EXTERN_C_CONST int32_t g_FieldOffsetTable2213[15];
+IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[2214] = 
 {
 	NULL,
 	NULL,
@@ -3531,6 +3532,7 @@ IL2CPP_EXTERN_C_CONST int32_t* g_FieldOffsetTable[2213] =
 	g_FieldOffsetTable2210,
 	g_FieldOffsetTable2211,
 	g_FieldOffsetTable2212,
+	g_FieldOffsetTable2213,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize0;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1;
@@ -5745,7 +5747,8 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2209;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2210;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2211;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2212;
-IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2213] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2213;
+IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2214] = 
 {
 	(&g_typeDefinitionSize0),
 	(&g_typeDefinitionSize1),
@@ -7960,4 +7963,5 @@ IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTabl
 	(&g_typeDefinitionSize2210),
 	(&g_typeDefinitionSize2211),
 	(&g_typeDefinitionSize2212),
+	(&g_typeDefinitionSize2213),
 };

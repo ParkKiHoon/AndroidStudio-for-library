@@ -1,168 +1,180 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
-INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
 	package
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:70-98
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:4:5-33
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:99-145
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:1-52:12
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:1-111:12
 		INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:3:11-69
-application
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:4:3-46:17
-activity#com.unity3d.player.SecondUnityPlayerActivity
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:5:5-13:16
-	android:screenOrientation
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:6:9-47
-	android:process
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:9:9-39
-	android:launchMode
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:6:48-79
-	android:hardwareAccelerated
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:8:9-44
-	android:configChanges
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:7:9-190
-	android:theme
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:5:75-116
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:5:15-74
-meta-data#unityplayer.UnityActivity
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:10:7-82
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:10:59-79
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:10:18-58
-meta-data#android.notch_support
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:11:7-78
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:11:55-75
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:11:18-54
-activity#com.unity3d.player.PopupActivity
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:14:5-91
-	android:theme
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:14:45-88
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:14:15-44
-activity#com.unity3d.player.ReviewActivity
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:15:5-92
-	android:theme
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:15:46-89
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:15:15-45
-activity#com.unity3d.player.UnityPlayerActivity
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:16:5-24:16
-	android:screenOrientation
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:17:9-47
-	android:process
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:20:9-39
-	android:launchMode
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:17:48-79
-	android:hardwareAccelerated
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:19:9-44
-	android:configChanges
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:18:9-190
-	android:theme
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:16:69-110
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:16:15-68
-activity#com.unity3d.player.Ai_Frame_Main
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:26:5-39:16
-	android:screenOrientation
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:27:9-47
-	android:process
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:30:9-39
-	android:launchMode
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:27:48-79
-	android:hardwareAccelerated
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:29:9-44
-	android:configChanges
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:28:9-190
-	android:theme
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:26:63-104
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:26:15-62
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:31:7-34:23
-action#android.intent.action.MAIN
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:32:9-61
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:32:17-58
-category#android.intent.category.LAUNCHER
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:33:9-69
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:33:19-66
-meta-data#unityplayer.ForwardNativeEventsToDalvik
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:41:5-95
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:41:71-92
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:41:16-70
-meta-data#unity.splash-mode
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:42:5-69
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:42:49-66
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:42:16-48
-meta-data#unity.splash-enable
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:43:5-74
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:43:51-71
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:43:16-50
-meta-data#notch.config
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:44:5-81
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:44:44-78
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:44:16-43
-meta-data#unity.build-id
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:45:5-101
-	android:value
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:45:46-98
-	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:45:16-45
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:47:3-65
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:47:20-62
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:6:22-64
 uses-feature#0x00020000
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:48:3-52
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:8:5-54
 	android:glEsVersion
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:48:17-49
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:8:19-51
 uses-feature#android.hardware.touchscreen
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:49:3-88
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:9:5-11:36
 	android:required
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:49:61-85
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:11:9-33
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:49:17-60
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:10:9-52
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:50:3-99
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:12:5-14:36
 	android:required
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:50:72-96
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:50:17-71
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:13:9-63
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:51:3-108
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:15:5-17:36
 	android:required
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:51:81-105
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:51:17-80
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:16:9-72
+application
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:19:5-109:19
+activity#com.unity3d.player.BackActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:20:9-22:20
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:21:13-69
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:20:19-47
+activity#com.unity3d.player.SecondUnityPlayerActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:23:9-37:20
+	android:screenOrientation
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:29:13-51
+	android:process
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:28:13-43
+	android:launchMode
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:27:13-44
+	android:hardwareAccelerated
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:26:13-48
+	android:configChanges
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:25:13-194
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:30:13-54
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:24:13-54
+meta-data#unityplayer.UnityActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:31:13-33:40
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:33:17-37
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:32:17-57
+meta-data#android.notch_support
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:34:13-36:40
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:36:17-37
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:35:17-53
+activity#com.unity3d.player.ThirdUnityPlayerActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:38:9-52:20
+	android:screenOrientation
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:44:13-51
+	android:process
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:43:13-43
+	android:launchMode
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:42:13-44
+	android:hardwareAccelerated
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:41:13-48
+	android:configChanges
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:40:13-194
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:45:13-54
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:39:13-53
+activity#com.unity3d.player.PopupActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:53:9-55:59
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:54:13-42
+activity#com.unity3d.player.ReviewActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:56:9-58:59
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:58:13-56
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:57:13-43
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:59:9-73:20
+	android:screenOrientation
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:65:13-51
+	android:process
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:64:13-43
+	android:launchMode
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:63:13-44
+	android:hardwareAccelerated
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:62:13-48
+	android:configChanges
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:61:13-194
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:66:13-54
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:60:13-48
+activity#com.unity3d.player.Ai_Frame_Main
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:74:9-89:20
+	android:screenOrientation
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:80:13-51
+	android:process
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:79:13-43
+	android:launchMode
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:78:13-44
+	android:hardwareAccelerated
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:77:13-48
+	android:configChanges
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:76:13-194
+	android:theme
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:81:13-54
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:75:13-42
+meta-data#unityplayer.ForwardNativeEventsToDalvik
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:94:9-96:37
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:96:13-34
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:95:13-67
+meta-data#unity.splash-mode
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:97:9-99:33
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:99:13-30
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:98:13-45
+meta-data#unity.splash-enable
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:100:9-102:36
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:102:13-33
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:101:13-47
+meta-data#notch.config
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:103:9-105:50
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:105:13-47
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:104:13-40
+meta-data#unity.build-id
+ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:106:9-108:68
+	android:value
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:108:13-65
+	android:name
+		ADDED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml:107:13-42
 uses-sdk
 INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\AndroidTest\unityLibrary\src\main\AndroidManifest.xml
